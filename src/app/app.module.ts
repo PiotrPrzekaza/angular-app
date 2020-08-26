@@ -11,6 +11,8 @@ import { CoursesComponent } from './courses/courses.component';
 import { FormsModule } from '@angular/forms';
 import { CoursesService } from './shered/services/courses.service';
 import { LessonsService } from './shered/services/lessons.service';
+import { CoursesListComponent } from './courses/courses-list/courses-list.component';
+import { CourseDetailsComponent } from './courses/course-details/course-details.component';
 
 @NgModule({
   imports: [
@@ -21,7 +23,13 @@ import { LessonsService } from './shered/services/lessons.service';
     FormsModule,
     HttpClientModule,
   ],
-  declarations: [AppComponent, HomeComponent, CoursesComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    CoursesComponent,
+    CoursesListComponent,
+    CourseDetailsComponent,
+  ],
   providers: [CoursesService, LessonsService],
   bootstrap: [AppComponent],
 })
