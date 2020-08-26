@@ -5,11 +5,8 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: './courses-list.component.html',
   styleUrls: ['./courses-list.component.scss'],
 })
-export class CoursesListComponent implements OnInit {
+export class CoursesListComponent {
   @Input() courses;
   @Output() selected = new EventEmitter();
   @Output() deleted = new EventEmitter();
-  constructor() {}
-
-  ngOnInit(): void {}
 }
