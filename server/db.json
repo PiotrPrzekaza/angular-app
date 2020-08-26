@@ -1,13 +1,6 @@
 {
   "courses": [
     {
-      "id": 1,
-      "title": "ESNext top features",
-      "description": "Learn the fundamentals modern JS.",
-      "percentComplete": 22,
-      "favorite": true
-    },
-    {
       "id": 2,
       "title": "C# from Beginer",
       "description": "Learn C#",
