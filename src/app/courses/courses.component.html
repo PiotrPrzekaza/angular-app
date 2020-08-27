@@ -7,8 +7,11 @@
     >
     </app-courses-list>
   </div>
-
   <div class="course-details">
-    <app-course-details></app-course-details>
+    <app-course-details
+      [currentCourse]="currentCourse"
+      (save)="saveCourse($event)"
+      (cancel)="cancelFocus()"
+    ></app-course-details>
   </div>
 </div>
